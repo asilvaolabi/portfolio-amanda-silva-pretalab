@@ -7,103 +7,97 @@
     <title>Portfólio Amanda Silva</title>
     <link rel="shortcut icon" href="img/foto-perfil.jpeg">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#formacao">Formação</a>
-                </li>
+     <!-- O Header faz parte da semântica, de criar a "cabeçalho" do site -->
+     <header class="header-menu">
+        <!-- O Nav é a barra de navegação do site, quando entrarmos no CSS, tudo fará sentido -->
+       <nav>
+            <!-- O Ul e o OL são as listas -->
+           <ul class="lista-menu">
+               <li>
+                   <a href="#formacao">Formação</a>
+               </li>
+               <li>
+                   <a href="#portfolio">Portfólio</a>
+               </li>
+               <li>
+                   <a href="#contato">Contato</a>
+               </li>
+           </ul>
+       </nav>
+   </header>
 
-                <li>
-                    <a href="#projetos">Meus Projetos</a>
-                </li>
+   <!-- O Main faz parte da semântica, de criar o "corpo" do site -->
 
-                <li>
-                    <a href="#contato">Contatos</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+   <main>
+       <!-- O Section faz parte da semântica, de criar e separar as sessões do nosso site -->
+       <section class="principal">
+           <!-- O article quer dizer que estamos criando um trecho do nosso site, que é independente de outros trechos/partes do nosso site -->
+           <div class="subcontainer-principal container">
+               <div>
+                   <img src="img/foto-perfil.jpeg">
+               </div>
+               <div>
+                   <h1 class="nome-completo">Amanda Silva</h1>
+                   <h2 class="profissao">Desenvolvedora Front-end</h2>
+               </div>
+               <div class="texto-sobre">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. In hac habitasse platea dictumst. Nulla facilisi. Nulla id luctus tortor, id hendrerit
+                   metus. Donec vulputate tellus sed sollicitudin porta. Aliquam turpis leo, pellentesque et velit a, sagittis scelerisque quam. Suspendisse imperdiet molestie leo. Proin sed imperdiet erat, ut
+               </div>
+           </div>
+       </section>
 
-    <main>
-        <section>
-            <div>
-                <img src="img/foto-perfil.jpeg">
-            </div>
+       <section>
+               <div class="container article-lista">
+                   <div>
+                       <h3 class="topico-principal">Formação</h3>
+                   </div>
+                   <div class="lista-item">
+                       <ul>
+                           <li>
+                               <p class="lista-titulo">Ciclo formativo Pretalab</p>
+                               <a href="https://www.pretalab.com/formacao" target="_blank" class="lista-local">Pretalab / Olabi</a>
+                               <p class="lista-descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.</p>
+                           </li>
+                           <li>
+                               <p class="lista-titulo">Ciclo formativo</p>
+                               <a href="https://www.pretalab.com/formacao" target="_blank" class="lista-local">Colégio Ensino</a>
+                               <p class="lista-descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.</p>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+       </section>
 
-            <div>
-                <h1>Amanda Silva</h1>
-                <h2>Desenvolvedora Front-End</h2>
-            </div>
-
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. In hac habitasse platea dictumst. Nulla facilisi. Nulla id luctus tortor, id hendrerit
-                metus. Donec vulputate tellus sed sollicitudin porta. Aliquam turpis leo, pellentesque et velit a, sagitt 
-                </p>
-            </div>    
-        </section>
-
-        <section id="formacao">
-          <div>
-            Formação
-          </div> 
-          <div>
-            <ul>
-                <li>
-                    <p>Ciclo Formativo Pretalab</p>
-                    <a href="https://www.pretalab.com/formacao" target="_blank">Pretalab / Olabi</a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. 
-                        Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.
-                    </p>
-                </li>
-
-                <li>
-                    <p>Ensino médio</p>
-                    <a href="https://www.pretalab.com/formacao" target="_blank">Colégio Elias</a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. 
-                        Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.
-                    </p>
-                </li>
-            </ul>
-
-          </div> 
-        </section>
-
-        <section id="projetos">
-            <div>
-                Meus projetos
-              </div> 
-              <div>
-                <ul>
-                    <li>
-                        <p>Calculadora</p>
-                        <a href="#" target="_blank">Calculadora em Javascript</a>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. 
-                            Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.
-                        </p>
-                    </li>
-    
-                    <li>
-                        <p>Projeto pessoal React</p>
-                        <a href="#" target="_blank">Projeto de React</a>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. 
-                            Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.
-                        </p>
-                    </li>
-                </ul>
-    
-              </div> 
-        </section>
-    </main>
+       <section class="wrapper-portfolio">
+           <article class="container article-lista">
+               <div>
+                   <h3 class="topico-principal">Blog</h3>
+               </div>
+               <div class="lista-item">
+                   <ul>
+                       <li>
+                           <p class="lista-titulo">Mulheres que fazem história</p>
+                           <p class="subtitulo-lista">Revelo</p>
+                           <a href="https://community.revelo.io/27-desenvolvedoras-brasileiras-para-se-inspirar-em-2022/" target="_blank" class="lista-local"> 27 desenvolvedoras brasileiras para se inspirar em 2022</a>
+                           <p class="lista-descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.</p>
+                       </li>
+                       <li>
+                           <p class="lista-titulo">Quem Coda BR</p>
+                           <p class="subtitulo-lista">Pretalab</p>
+                           <a href="https://www.pretalab.com/report-quem-coda" target="_blank" class="lista-local">Quem coda br</a>
+                           <p class="lista-descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.</p>
+                       </li>
+                   </ul>
+               </div>
+           </article>
+       </section>
+   </main>
 
     <footer>
         <div id="contato">   
