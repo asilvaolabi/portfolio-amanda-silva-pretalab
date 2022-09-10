@@ -143,6 +143,7 @@ centro do browser. O container é invisível. */
     flex-direction: column;
 }
 
+/* Rodapé */
 .footer {
     background-color: #724796;
     height: 30vh;
