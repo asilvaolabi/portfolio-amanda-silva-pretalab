@@ -142,3 +142,29 @@ centro do browser. O container é invisível. */
     display: flex;
     flex-direction: column;
 }
+
+.footer {
+    background-color: #724796;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+}
+
+.estilo-icon {
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+.links {
+    text-decoration:none;
+    color: white;
+}
+
+.lista-footer li {
+    color: #FFFF;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
